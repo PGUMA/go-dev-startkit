@@ -1,0 +1,3 @@
+# .dockerignore に記載のあるファイルはコンテキスト(docker イメージ構築に必要な素材・内容物)から除外される
+.git
+.DS_Store
