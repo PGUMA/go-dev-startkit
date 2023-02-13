@@ -23,3 +23,13 @@ COPY --from=deploy-builder /app/app .
 CMD ["./app"]
 
 # ---------------------------------------------------------
+
+# ローカル開発用のホットリロード環境
+FROM golang:1.18.2 as dev
+
+WORKDIR /app
+
+# https://github.com/cosmtrek/air
+RUN go install github.com/cosmtrek/air@latest
+
+CMD ["air"]
