@@ -1,0 +1,22 @@
+# 参考:https://zenn.dev/sanpo_shiho/books/61bc1e1a30bf27/viewer/27b52f
+linters-settings:
+  govet:
+    check-shadowing: false
+  gocyclo:
+    min-complexity: 30
+  misspell:
+    locale: US
+
+linters:
+  disable-all: true
+  enable:
+    - goimports
+    - unused
+    - errcheck
+    - gocognit
+    - gocyclo
+    - gofmt
+    - govet
+    - misspell
+    - staticcheck
+    - whitespace
